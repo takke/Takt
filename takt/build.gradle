@@ -6,7 +6,7 @@ android {
   buildToolsVersion rootProject.ext.buildToolsVersion as String
 
   defaultConfig {
-    minSdkVersion MIN_SDK_VERSION as int
+    minSdkVersion rootProject.ext.minSdkVersion as Integer
     targetSdkVersion TARGET_SDK_VERSION as int
     versionCode VERSION_CODE as int
     versionName VERSION_NAME
