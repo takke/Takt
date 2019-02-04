@@ -2,15 +2,20 @@ apply plugin: 'com.android.library'
 //apply plugin: 'com.novoda.bintray-release'
 
 android {
-  compileSdkVersion rootProject.ext.compileSdkVersion as Integer
-  buildToolsVersion rootProject.ext.buildToolsVersion as String
+    compileSdkVersion rootProject.ext.compileSdkVersion as Integer
+    buildToolsVersion rootProject.ext.buildToolsVersion as String
 
-  defaultConfig {
-    minSdkVersion rootProject.ext.minSdkVersion as Integer
-    targetSdkVersion TARGET_SDK_VERSION as int
-    versionCode VERSION_CODE as int
-    versionName VERSION_NAME
-  }
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion as Integer
+        targetSdkVersion TARGET_SDK_VERSION as int
+        versionCode VERSION_CODE as int
+        versionName VERSION_NAME
+    }
+
+    buildTypes {
+        release {
+        }
+    }
 }
 
 /*
